@@ -45,7 +45,7 @@ namespace SerilogExtensions {
 			Enabled = new List<string>();
 			Disabled = new List<string>();
 			LogLevelsBySource = new Dictionary<string, LogEventLevel>() { {"SomeClass", 0 }, { "OtherClass", 0 }  };
-			OutputTemplate = "[{ThreadId} {Level:u3} {SourceContext} {Properties[Tag]}] {Message:lj}{NewLine}{Exception}";
+			OutputTemplate = "[{ThreadId} {Level:u3} {SourceContext} {Tag}] {Message:lj}{NewLine}{Exception}";
 		}
 
 		/// <summary>
